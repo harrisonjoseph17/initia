@@ -1,0 +1,6 @@
+wget -O initia_latest.tar.lz4 https://snapshots.tienthuattoan.com/testnet/initia/initia_latest.tar.lz4
+
+#after that
+lz4 -c -d initia_latest.tar.lz4 | tar -x -C $HOME/.initia
+
+#then move back the priv_validator_state.json.backup
